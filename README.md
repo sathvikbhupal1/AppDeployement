@@ -51,3 +51,6 @@ Continuous deployment is implemented by triggering the pipeline automatically up
 
 
 Webhooks have been added to Jenkins to trigger the pipeline automatically upon changes in the code repository.
+
+
+**Refer to the Project Documentation for the Architecture info and detailed step by step process for acheiving the project ouput**
