@@ -10,11 +10,21 @@ This repository contains Terraform scripts for provisioning resources on AWS and
 
 *Terraform Scripts*
 The Terraform scripts in this repository automate the provisioning of the following resources on AWS:
-Custom VPC with public and private subnets across multiple availability zones for high availability.
-Auto Scaling Group (ASG) configured to launch Docker hosts (EC2 instances) within the private subnets.
-Load Balancer (ELB or ALB) to distribute traffic across the Docker hosts.
-Proper security group configurations to allow necessary traffic.
-AWS IAM roles with appropriate permissions for EC2 instances and Auto Scaling Group.
+
+
+1.Custom VPC with public and private subnets across multiple availability zones for high availability.
+
+
+2.Auto Scaling Group (ASG) configured to launch Docker hosts (EC2 instances) within the private subnets.
+
+
+3.Load Balancer (ALB) to distribute traffic across the Docker hosts.
+
+
+4.Proper security group configurations to allow necessary traffic.
+
+
+5.AWS IAM roles with appropriate permissions for EC2 instances and Auto Scaling Group.
 
 
 *Files*:
