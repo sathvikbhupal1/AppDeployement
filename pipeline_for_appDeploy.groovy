@@ -4,14 +4,14 @@ pipeline {
     environment {
         DOCKER_IMAGE = "sathvikbhupal1/sample:latest"
         DOCKERHUB_CREDENTIALS_ID = "dockerhub-credentials" // Jenkins ID for Docker Hub credentials
-        BASTION_PUBLIC_IP = "52.49.205.170"
+        BASTION_PUBLIC_IP = "enter your public ip here"
         BASTION_USER = "ec2-user"
     }
     
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sathvik9709/application-assessmengt-repo']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url:enter your repo url here ]])
             }
         }
 
