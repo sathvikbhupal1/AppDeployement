@@ -28,10 +28,16 @@ The Terraform scripts in this repository automate the provisioning of the follow
 
 
 *Files*:
-main.tf: Contains the main Terraform configuration defining the resources to be provisioned.
-providers.tf: Defines the AWS provider and its configuration.
-variables.tf: Declares the input variables used in the Terraform scripts.
-outputs.tf: Defines the output variables to be displayed after Terraform execution.
+1.main.tf: Contains the main Terraform configuration defining the resources to be provisioned.
+
+
+2.providers.tf: Defines the AWS provider and its configuration.
+
+
+3.variables.tf: Declares the input variables used in the Terraform scripts.
+
+
+4.outputs.tf: Defines the output variables to be displayed after Terraform execution.
 
 **Additional Considerations**
 
