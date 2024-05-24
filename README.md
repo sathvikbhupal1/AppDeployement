@@ -1,9 +1,13 @@
 # AppDeployement
 
 **Infrastructure and CI/CD Pipeline Setup**
+
+
 This repository contains Terraform scripts for provisioning resources on AWS and setting up a CI/CD pipeline using Jenkins for deploying a Java application packaged into Docker containers onto the provisioned infrastructure.
 
 **Infrastructure Setup**
+
+
 *Terraform Scripts*
 The Terraform scripts in this repository automate the provisioning of the following resources on AWS:
 Custom VPC with public and private subnets across multiple availability zones for high availability.
@@ -20,6 +24,8 @@ variables.tf: Declares the input variables used in the Terraform scripts.
 outputs.tf: Defines the output variables to be displayed after Terraform execution.
 
 **Additional Considerations**
+
+
 Docker hosts are provisioned in a highly available manner across multiple availability zones.
 Proper monitoring and scaling configurations are implemented for the Docker hosts.(Prometheus and grafana)
 Security best practices are followed, including encryption, and secure communication between components.
@@ -39,6 +45,8 @@ Jenkins is configured to fetch the Java application source code from the GitHub 
 The pipeline is set up to build the Java application and package it into a Docker container.
 Hardcode the terraform output values to deploy the Docker container onto the provisioned infrastructure.
 Continuous deployment is implemented by triggering the pipeline automatically upon changes to the GitHub repository.
+
+
 **Additional Notes**
 
 
